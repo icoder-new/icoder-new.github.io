@@ -1,0 +1,68 @@
+/* * * * * * * * * * * * * * * * * * * * *\ 
+ Tenue v1.0.0 
+ A subtle css text-shadow effect 
+ (c) 2015 Pixeden 
+ http://www.pixeden.com/html-css/tenue-css3-text-effect 
+\* * * * * * * * * * * * * * * * * * * * */
+@font-face {
+  font-family: 'josefin_sansthin';
+  src: url("../fonts/josefinsans-thin-webfont.eot");
+  src: url("../fonts/josefinsans-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinsans-thin-webfont.woff2") format("woff2"), url("../fonts/josefinsans-thin-webfont.woff") format("woff"), url("../fonts/josefinsans-thin-webfont.ttf") format("truetype"), url("../fonts/josefinsans-thin-webfont.svg#josefin_sansthin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.tenue-shadow {
+  /* Basic text style (optionals but recommended) */
+  font-family: "josefin_sansthin";
+  font-weight: 100;
+  color: #1e1e1e;
+  /* Tenue shadow (required) */
+  text-shadow: -0.00497em -0.00232em 0.1px rgba(3, 3, 3, 0.75), -0.00746em -0.00464em 0.3px rgba(7, 7, 7, 0.75), -0.01243em -0.00696em 0.5px rgba(10, 10, 10, 0.75), -0.01492em -0.00928em 0.7px rgba(14, 14, 14, 0.75), -0.01989em -0.01159em 0.9px rgba(18, 18, 18, 0.75), -0.02238em -0.01391em 1.1px rgba(21, 21, 21, 0.75), -0.02735em -0.01623em 1.3px rgba(25, 25, 25, 0.75), -0.02984em -0.01855em 1.5px rgba(29, 29, 29, 0.75), -0.03481em -0.02087em 1.7px rgba(32, 32, 32, 0.75), -0.0373em -0.02319em 1.9px rgba(36, 36, 36, 0.75), -0.04227em -0.02551em 2.1px rgba(40, 40, 40, 0.75), -0.04476em -0.02783em 2.3px rgba(43, 43, 43, 0.75), -0.04973em -0.03014em 2.5px rgba(47, 47, 47, 0.75), -0.05222em -0.03246em 2.7px rgba(50, 50, 50, 0.75), -0.05719em -0.03478em 2.9px rgba(54, 54, 54, 0.75), -0.05968em -0.0371em 3.1px rgba(58, 58, 58, 0.75), -0.06465em -0.03942em 3.3px rgba(61, 61, 61, 0.75), -0.06714em -0.04174em 3.5px rgba(65, 65, 65, 0.75), -0.07211em -0.04406em 3.7px rgba(69, 69, 69, 0.75), -0.0746em -0.04638em 3.9px rgba(72, 72, 72, 0.75), -0.07957em -0.04869em 4.1px rgba(76, 76, 76, 0.75), -0.08206em -0.05101em 4.3px rgba(80, 80, 80, 0.75), -0.08703em -0.05333em 4.5px rgba(83, 83, 83, 0.75), -0.08952em -0.05565em 4.7px rgba(87, 87, 87, 0.75), -0.09449em -0.05797em 4.9px rgba(91, 91, 91, 0.75), -0.09698em -0.06029em 5.1px rgba(94, 94, 94, 0.75), -0.10195em -0.06261em 5.3px rgba(98, 98, 98, 0.75), -0.10444em -0.06493em 5.5px rgba(102, 102, 102, 0.75), -0.10941em -0.06725em 5.7px rgba(105, 105, 105, 0.75), -0.1119em -0.06956em 5.9px rgba(109, 109, 109, 0.75), -0.11687em -0.07188em 6.1px rgba(112, 112, 112, 0.75), -0.11936em -0.0742em 6.3px rgba(116, 116, 116, 0.75), -0.12433em -0.07652em 6.5px rgba(120, 120, 120, 0.75), -0.12682em -0.07884em 6.7px rgba(123, 123, 123, 0.75), -0.13179em -0.08116em 6.9px rgba(127, 127, 127, 0.75), -0.13428em -0.08348em 7.1px rgba(131, 131, 131, 0.75), -0.13925em -0.0858em 7.3px rgba(134, 134, 134, 0.75), -0.14174em -0.08811em 7.5px rgba(138, 138, 138, 0.75), -0.14671em -0.09043em 7.7px rgba(142, 142, 142, 0.75), -0.1492em -0.09275em 7.9px rgba(145, 145, 145, 0.75), -0.15417em -0.09507em 8.1px rgba(149, 149, 149, 0.75), -0.15666em -0.09739em 8.3px rgba(153, 153, 153, 0.75), -0.16163em -0.09971em 8.5px rgba(156, 156, 156, 0.75), -0.16412em -0.10203em 8.7px rgba(160, 160, 160, 0.75), -0.16909em -0.10435em 8.9px rgba(163, 163, 163, 0.75), -0.17158em -0.10666em 9.1px rgba(167, 167, 167, 0.75), -0.17655em -0.10898em 9.3px rgba(171, 171, 171, 0.75), -0.17904em -0.1113em 9.5px rgba(174, 174, 174, 0.75), -0.18401em -0.11362em 9.7px rgba(178, 178, 178, 0.75), -0.1865em -0.11594em 9.9px rgba(182, 182, 182, 0.75), -0.19147em -0.11826em 10.1px rgba(185, 185, 185, 0.75), -0.19396em -0.12058em 10.3px rgba(189, 189, 189, 0.75), -0.19893em -0.1229em 10.5px rgba(193, 193, 193, 0.75), -0.20141em -0.12521em 10.7px rgba(196, 196, 196, 0.75), -0.20639em -0.12753em 10.9px rgba(200, 200, 200, 0.75), -0.20887em -0.12985em 11.1px rgba(204, 204, 204, 0.75), -0.21385em -0.13217em 11.3px rgba(207, 207, 207, 0.75), -0.21633em -0.13449em 11.5px rgba(211, 211, 211, 0.75), -0.22131em -0.13681em 11.7px rgba(214, 214, 214, 0.75), -0.22379em -0.13913em 12.1px rgba(218, 218, 218, 0.75), -0.22877em -0.14145em 12.5px rgba(222, 222, 222, 0.75), -0.23125em -0.14377em 12.9px rgba(225, 225, 225, 0.75), -0.23623em -0.14608em 13.3px rgba(229, 229, 229, 0.75), -0.23871em -0.1484em 13.7px rgba(233, 233, 233, 0.75), -0.24369em -0.15072em 14.1px rgba(236, 236, 236, 0.75), -0.24617em -0.15304em 14.5px rgba(240, 240, 240, 0.75), -0.25115em -0.15536em 15.5px rgba(244, 244, 244, 0.75), -0.25363em -0.15768em 16.5px rgba(247, 247, 247, 0.75), -0.25861em -0.16em 17.5px rgba(251, 251, 251, 0.75), -0.26109em -0.16232em 18.5px rgba(255, 255, 255, 0.75);
+  /* You could add: */
+  mix-blend-mode: multiply;
+}
+
+.tenue-extras {
+  font-size: 150px;
+  letter-spacing: .34em;
+  line-height: 1;
+  margin-bottom: .2em;
+  margin-top: 0;
+  overflow: hidden;
+  padding-bottom: .5em;
+  padding-left: .85em;
+  padding-top: 1em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+.tenue-extras sub,
+.tenue-extras sup {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .tenue-extras sub:nth-of-type(1) {
+    top: -.34em;
+  }
+  .tenue-extras sub:nth-of-type(3) {
+    top: -.07em;
+  }
+  .tenue-extras sup:last-of-type {
+    top: .25em;
+  }
+}
+
+.tenue-overlay {
+  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, #ff00dd 13%, rgba(255, 0, 255, 0.84) 15%, rgba(111, 0, 255, 0) 25%, rgba(0, 0, 255, 0.63) 33%, #004aff 38%, rgba(0, 255, 255, 0.05) 49%, rgba(0, 255, 246, 0) 50%, #00ff37 63%, rgba(0, 255, 0, 0.65) 67%, rgba(109, 255, 0, 0) 74%, rgba(255, 255, 0, 0.8) 84%, gold 86%, rgba(255, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, #ff00dd 13%, rgba(255, 0, 255, 0.84) 15%, rgba(111, 0, 255, 0) 25%, rgba(0, 0, 255, 0.63) 33%, #004aff 38%, rgba(0, 255, 255, 0.05) 49%, rgba(0, 255, 246, 0) 50%, #00ff37 63%, rgba(0, 255, 0, 0.65) 67%, rgba(109, 255, 0, 0) 74%, rgba(255, 255, 0, 0.8) 84%, gold 86%, rgba(255, 0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: auto 200%;
+  height: 100%;
+  left: 0;
+  mix-blend-mode: overlay;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
